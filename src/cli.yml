@@ -1,0 +1,29 @@
+name: rust-csv-toolkit
+version: "0.1.0"
+author: Pierre-Antoine Passet <pa@passet.org>
+about: Manipulate CSV files
+args:
+  - from:
+      short: f
+      long: from
+      value_name: FILE
+      required: true
+      help: Path to a CSV file on which "join" will be joined
+  - join:
+      short: j
+      long: join
+      value_name: FILE
+      required: true
+      help: Path to a CSV file to join to "from"
+  - key:
+      short: k
+      long: key
+      value_name: KEY
+      required: true
+      help: Colum on which to operate the join
+  - output:
+      short: o
+      long: output
+      value_name: FILE
+      required: true
+      help: File path to which the result will be written
